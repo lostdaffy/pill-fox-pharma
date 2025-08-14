@@ -48,7 +48,7 @@ const GetInTouch = () => {
                 action="https://api.web3forms.com/submit"
                 className="space-y-5 sm:space-y-6"
               >
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+                <input type="hidden" name="access_key" value="22238afa-576b-4962-8956-f34bbe920801" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
