@@ -39,7 +39,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/home" aria-label="Pill Fox Pharma - Home" className="flex items-center gap-2">
               <img
-                src="/images/logo.jpeg"
+                src="/images/logo.png"
                 alt="Pill Fox Pharma"
                 className="h-9 sm:h-10 w-auto select-none"
                 draggable={false}

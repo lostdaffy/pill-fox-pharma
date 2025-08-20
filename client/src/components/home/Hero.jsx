@@ -22,37 +22,25 @@ const Hero = () => {
         </div>
 
         {/* Centered Content */}
-        <div className="relative z-20 flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+        <div className="relative  flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-5xl">
-            <h1 className="text-[#112e51] uppercase text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight">
+            <div>
+             <img src="/images/icon.png" className="w-25 mx-auto block pb-5" alt="" />
+
+            </div>
+
+            <h1 className="text-[#112e51] uppercase text-3xl sm:text-5xl lg:text-8xl font-bold leading-tight">
               Welcome to{" "}
               <span className="block text-[#399a8c]">Pillfox Pharma</span>
             </h1>
             <p className="italic mt-6 text-xl sm:text-2xl text-[#112e51] font-semibold leading-relaxed">
               "Every Pill Carries a Promise"
             </p>
-            <p className="mt-4 text-lg sm:text-xl text-[#112e51] leading-relaxed max-w-4xl mx-auto">
+            <p className="mt-4 text-base sm:text-xl text-[#112e51] leading-relaxed max-w-4xl mx-auto text-justify">
               Pillfox Pharma is driven by innovation, quality and trust.
               Delivering reliable and affordable therapeutics across the nation
               with world-class manufacturing and ethical practices.
             </p>
-
-            {/* QR Code Section */}
-            <div className="mt-8 flex justify-center items-center gap-6">
-              <div className="bg-white bg-opacity-90 ">
-                <div className="w-16 h-16 bg-gray-200  flex items-center justify-center">
-                  <img src="/images/bar-code.jpeg" className="rounded-lg" alt="" />
-                </div>
-              </div>
-              <div className="text-left">
-                <h3 className="font-bold text-[#112e51] text-lg">
-                  Verify Authenticity
-                </h3>
-                <p className="text-[#112e51] text-sm">
-                  Scan QR code to check quality & certifications
-                </p>
-              </div>
-            </div>
 
             {/* CTA Buttons */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
