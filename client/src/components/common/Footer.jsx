@@ -13,7 +13,7 @@ const Footer = () => {
               <div className="lg:col-span-1 space-y-6">
                 <div className="space-y-4">
                   <img
-                    src="/images/logo.jpeg"
+                    src="/images/logo.png"
                     className="w-50"
                     alt="Pillfox Pharma Logo"
                   />
