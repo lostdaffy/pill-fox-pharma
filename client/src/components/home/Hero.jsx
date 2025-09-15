@@ -47,12 +47,15 @@ const Hero = () => {
             </p>
 
             {/* CTA Buttons */}
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center w-full px-4">
               <Link
                 to="/services"
-                className="bg-[#399a8c] hover:bg-[#399a8bee] text-white text-lg font-semibold py-4 px-15 rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="w-full sm:w-auto bg-[#399a8c] hover:bg-[#399a8bee] text-white 
+               text-base sm:text-lg font-semibold py-3 sm:py-4 px-6 sm:px-10 
+               rounded-full transition-all duration-300 inline-flex items-center 
+               justify-center gap-2 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
-                <i className="ri-capsule-fill"></i>
+                <i className="ri-capsule-fill text-lg sm:text-xl"></i>
                 Explore Medicine
               </Link>
             </div>
