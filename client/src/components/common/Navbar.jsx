@@ -37,24 +37,28 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-3.5 sm:py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/home" aria-label="Pill Fox Pharma - Home" className="flex items-center gap-2">
+            <Link
+              to="/home"
+              aria-label="Pill Fox Pharma - Home"
+              className="flex items-center gap-2"
+            >
               <img
-                src="/images/logo.png"
+                src="/images/icon.png"
                 alt="Pill Fox Pharma"
-                className="h-9 sm:h-10 w-auto select-none"
+                className="h-10 sm:h-15 w-auto select-none"
                 draggable={false}
               />
             </Link>
           </div>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-6 lg:gap-10">
+          <nav className="hidden md:flex items-center gap-6 lg:gap-15">
             {menuItems.map((item) => (
               <Link
                 key={item.label}
                 to={item.to}
                 className={[
-                  "relative text-sm lg:text-base font-medium transition-colors",
+                  "relative text-sm lg:text-lg font-semibold transition-colors",
                   isActive(item.to)
                     ? "text-[#399a8c]"
                     : "text-[#112e51] hover:text-[#399a8c]",
@@ -66,7 +70,9 @@ const Navbar = () => {
                   aria-hidden="true"
                   className={[
                     "absolute -bottom-1 left-0 h-0.5 rounded-full transition-all",
-                    isActive(item.to) ? "w-full bg-[#399a8c]" : "w-0 bg-transparent",
+                    isActive(item.to)
+                      ? "w-full bg-[#399a8c]"
+                      : "w-0 bg-transparent",
                   ].join(" ")}
                 />
               </Link>
@@ -77,10 +83,10 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center">
             <Link
               to="tel:+917302799941"
-              className="inline-flex items-center gap-2 bg-[#399a8c] text-white text-sm font-semibold px-5 xl:px-6 py-2.5 xl:py-3 rounded-full transition-colors hover:bg-[#328a7e] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#399a8c] focus-visible:ring-offset-2"
+              className="bg-[#399a8c] text-white text-base font-semibold rounded-full py-3 px-10"
             >
-              <i className="ri-phone-fill text-base" aria-hidden="true" />
-              <span>Contact us</span>
+              <i className="ri-phone-fill text-lg me-2" />
+              Contact us
             </Link>
           </div>
 
@@ -93,7 +99,9 @@ const Navbar = () => {
             aria-controls="mobile-menu"
           >
             <i
-              className={`ri-${isMenuOpen ? "close" : "menu"}-line text-2xl text-gray-700`}
+              className={`ri-${
+                isMenuOpen ? "close" : "menu"
+              }-line text-2xl text-gray-700`}
               aria-hidden="true"
             />
           </button>
@@ -128,7 +136,7 @@ const Navbar = () => {
               {/* Mobile Contact button */}
               <li className="mt-2">
                 <Link
-                  to="tel:+917302799941"
+                  to="tel:+01353132190"
                   className="w-full inline-flex items-center justify-center gap-2 bg-[#399a8c] text-white font-semibold px-4 py-3 rounded-lg hover:bg-[#328a7e] transition-colors"
                 >
                   <i className="ri-phone-fill text-lg" aria-hidden="true" />

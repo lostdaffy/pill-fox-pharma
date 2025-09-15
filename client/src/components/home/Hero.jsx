@@ -5,28 +5,32 @@ const Hero = () => {
   return (
     <>
       {/* Hero Section with Video Background */}
-      <section id="home" className="relative min-h-screen overflow-hidden">
-        {/* Video Background */}
-        <div className="absolute inset-0 w-full h-full">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="absolute top-0 left-0 w-full h-full object-cover"
-          >
-            <source src="/images/6036143.mp4" type="video/mp4" />
-            <source src="/images/6036143.webm" type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+      <section className="relative min-h-screen overflow-hidden">
+        {/* Video Background without absolute */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover min-h-screen"
+        >
+          <source src="/images/6036143.mp4" type="video/mp4" />
+          <source src="/images/6036143.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Overlay (dark/light tint for readability) */}
+        <div className="absolute inset-0 bg-white/20"></div>
 
         {/* Centered Content */}
-        <div className="relative  flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-5xl">
+        <div className="absolute inset-0 flex justify-center px-4 sm:px-6 lg:px-8 pt-20">
+          <div className="text-center max-w-5xl relative z-10">
             <div>
-             <img src="/images/icon.png" className="w-25 mx-auto block pb-5" alt="" />
-
+              <img
+                src="/images/icon.png"
+                className="w-25 mx-auto block pb-5"
+                alt=""
+              />
             </div>
 
             <h1 className="text-[#112e51] uppercase text-3xl sm:text-5xl lg:text-8xl font-bold leading-tight">
@@ -46,10 +50,10 @@ const Hero = () => {
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/services"
-                className="bg-[#399a8c] hover:bg-[#399a8bee] text-white font-semibold py-3 px-15 rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="bg-[#399a8c] hover:bg-[#399a8bee] text-white text-lg font-semibold py-4 px-15 rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
-                <i className="ri-arrow-right-up-long-line"></i>
-                Explore Now
+                <i className="ri-capsule-fill"></i>
+                Explore Medicine
               </Link>
             </div>
           </div>
