@@ -5,6 +5,7 @@ import ManufacturingPower from "../components/home/ManufacturingPower";
 import OurProducts from "../components/home/OurProducts";
 import Vision from "../components/home/Vision";
 import GetInTouch from "../components/common/GetInTouch";
+import ProductSlider from "../components/home/ProductSlider";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Vision />
       <About />
       <ManufacturingPower />
+      <ProductSlider/>
       <OurProducts />
       <GetInTouch />
     </>
