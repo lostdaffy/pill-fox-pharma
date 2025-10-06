@@ -33,7 +33,7 @@ const Hero = () => {
               />
             </div>
 
-            <h1 className="text-[#112e51] uppercase text-3xl sm:text-5xl lg:text-8xl font-bold leading-tight">
+            <h1 className="text-[#112e51] uppercase text-3xl sm:text-5xl lg:text-7xl font-bold leading-tight">
               Welcome to{" "}
               <span className="block text-[#399a8c]">Pillfox Pharma</span>
             </h1>
