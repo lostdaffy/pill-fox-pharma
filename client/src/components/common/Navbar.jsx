@@ -58,7 +58,7 @@ const Navbar = () => {
                 key={item.label}
                 to={item.to}
                 className={[
-                  "relative text-sm lg:text-lg font-semibold transition-colors",
+                  "relative text-sm lg:text-base font-semibold transition-colors",
                   isActive(item.to)
                     ? "text-[#399a8c]"
                     : "text-[#112e51] hover:text-[#399a8c]",
